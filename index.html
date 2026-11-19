@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#100d0d">
+    <meta name="description" content="Um convite para uma noite de cinema envolta em mistério.">
+    <title>Uma noite de cinema | Convite secreto</title>
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <div class="grain" aria-hidden="true"></div>
+    <main>
+      <section class="hero" aria-labelledby="invite-title">
+        <div class="hero__copy">
+          <p class="eyebrow"><span class="eyebrow__line"></span> UM CONVITE FORA DO COMUM</p>
+          <h1 id="invite-title">Uma noite<br>de <em>cinema.</em></h1>
+          <p class="hero__intro">Luzes baixas, uma boa história e a companhia certa. Tenho um lugar guardado para você — se tiver coragem de aceitar.</p>
+          <a class="button button--primary" href="#convite">Descobrir o convite <span aria-hidden="true">↓</span></a>
+        </div>
+        <figure class="smile-art">
+          <img src="/smile.svg" alt="Ilustração artística de um sorriso vermelho desenhado sobre um fundo escuro">
+          <figcaption>Um sorriso na escuridão. Uma história para lembrar.</figcaption>
+        </figure>
+        <span class="hero__index" aria-hidden="true">01 / 03</span>
+      </section>
+
+      <section class="poem-section" id="convite" aria-labelledby="poem-title">
+        <div class="section-label"><span>O ENIGMA</span><span>02 — 03</span></div>
+        <div class="poem-card">
+          <span class="quote-mark" aria-hidden="true">“</span>
+          <p class="poem" id="poem-title">Tigre, tigre, que flamejas<br>
+            Nas florestas da noite;<br>
+            Que mão ou que olho imortal<br>
+            Se atreveu a plasmar tua<br>
+            Terrível simetria?</p>
+          <p class="poem-credit">William Blake <span>·</span> O Tigre</p>
+        </div>
+        <p class="poem-note">Há histórias que ficam melhores quando a tela se ilumina e o mundo lá fora desaparece.</p>
+      </section>
+
+      <section class="details-section" aria-labelledby="details-title">
+        <div class="section-label"><span>A SESSÃO</span><span>03 — 03</span></div>
+        <div class="details-layout">
+          <div class="details-heading">
+            <p class="eyebrow">UM LUGAR NA PRIMEIRA FILA</p>
+            <h2 id="details-title">O plano é<br><em>simples.</em></h2>
+            <p>Uma sessão de cinema para escolhermos juntos — suspense, mistério ou aquele filme que você vive dizendo que eu preciso assistir.</p>
+          </div>
+          <div class="itinerary">
+            <article class="itinerary__item">
+              <span class="itinerary__number">01</span>
+              <div><h3>Escolhemos o filme</h3><p>Seu gênero favorito ou uma surpresa. Você decide.</p></div>
+            </article>
+            <article class="itinerary__item">
+              <span class="itinerary__number">02</span>
+              <div><h3>Pipoca, por minha conta</h3><p>Doce, salgada ou as duas — sem julgamentos.</p></div>
+            </article>
+            <article class="itinerary__item">
+              <span class="itinerary__number">03</span>
+              <div><h3>Data e cinema</h3><p>A gente combina o melhor dia e escolhe a sala juntos.</p></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="rsvp-section" aria-labelledby="rsvp-title">
+        <div class="rsvp-card">
+          <p class="eyebrow">A DECISÃO É SUA</p>
+          <h2 id="rsvp-title">Aceita o <em>convite?</em></h2>
+          <p class="rsvp-description">Me conta sua resposta — e, se quiser, deixe uma pista sobre o filme perfeito para essa noite.</p>
+          <form id="rsvp-form">
+            <label for="guest-name">Seu nome</label>
+            <input id="guest-name" name="name" type="text" autocomplete="name" maxlength="80" placeholder="Como devo te chamar?" required>
+            <label for="guest-message">Uma mensagem <span>(opcional)</span></label>
+            <textarea id="guest-message" name="message" rows="3" maxlength="500" placeholder="Tem algum filme em mente?"></textarea>
+            <div class="rsvp-actions">
+              <button class="button button--primary" type="submit" name="answer" value="yes">Sim, eu aceito <span aria-hidden="true">↗</span></button>
+              <button class="button button--quiet" type="submit" name="answer" value="no">Desta vez, não</button>
+            </div>
+            <p class="form-feedback" id="form-feedback" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+        <p class="closing-note">A melhor parte de qualquer filme é com quem a gente assiste.</p>
+      </section>
+    </main>
+    <footer><span>UMA NOITE DE CINEMA</span><a href="/admin.html">Área reservada</a></footer>
+    <script src="/JS/script.js" defer></script>
+  </body>
+</html>

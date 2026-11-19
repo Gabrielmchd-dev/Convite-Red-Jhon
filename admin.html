@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#100d0d">
+    <title>Área reservada | Convite de cinema</title>
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body class="admin-page">
+    <main class="admin-card">
+      <p class="eyebrow">ACESSO RESTRITO</p>
+      <section id="login-view">
+        <h1>Área<br><em>reservada.</em></h1>
+        <p>Entre com a senha de administrador para consultar as respostas do convite.</p>
+        <form id="login-form">
+          <label for="admin-password">Senha de administrador</label>
+          <input id="admin-password" name="password" type="password" autocomplete="current-password" required>
+          <button class="button button--primary" type="submit">Entrar <span aria-hidden="true">↗</span></button>
+          <p class="admin-feedback" id="login-feedback" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+      <section id="responses-view" hidden>
+        <div class="admin-top">
+          <h1>Respostas.</h1>
+          <button id="logout-button" class="button button--quiet" type="button">Sair</button>
+        </div>
+        <p id="response-count"></p>
+        <p class="admin-feedback" id="responses-feedback" role="status" aria-live="polite"></p>
+        <ul class="response-list" id="response-list"></ul>
+      </section>
+    </main>
+    <script src="/JS/admin.js" defer></script>
+  </body>
+</html>

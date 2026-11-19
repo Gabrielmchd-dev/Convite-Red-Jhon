@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 440" role="img" aria-labelledby="title description">
+  <title id="title">Sorriso vermelho na escuridão</title>
+  <desc id="description">Ilustração original de um sorriso vermelho pintado com pinceladas sobre um fundo preto.</desc>
+  <defs>
+    <radialGradient id="halo">
+      <stop offset="0" stop-color="#6f1c1c" stop-opacity=".44"/>
+      <stop offset="1" stop-color="#100d0d" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="paint" x1="120" y1="170" x2="450" y2="310" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#e15748"/>
+      <stop offset=".48" stop-color="#a52625"/>
+      <stop offset="1" stop-color="#e0443b"/>
+    </linearGradient>
+    <filter id="soft-glow" x="30" y="55" width="500" height="340" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="13"/>
+    </filter>
+  </defs>
+  <ellipse cx="280" cy="228" rx="250" ry="205" fill="url(#halo)"/>
+  <path d="M92 179c95 61 278 82 377 12" fill="none" stroke="#bf352d" stroke-linecap="round" stroke-width="29" opacity=".52" filter="url(#soft-glow)"/>
+  <path d="M92 179c95 61 278 82 377 12" fill="none" stroke="url(#paint)" stroke-linecap="round" stroke-width="15"/>
+  <path d="M95 176c92 55 269 77 370 10" fill="none" stroke="#ef7462" stroke-linecap="round" stroke-width="3" opacity=".48"/>
+  <path d="M126 184c38 81 102 130 158 137 65 8 133-33 173-123-82 36-244 19-331-14Z" fill="#190c0c" stroke="#bf302b" stroke-linejoin="round" stroke-width="7"/>
+  <path d="M138 198c50 22 101 34 153 38l-6 69c-51-7-105-44-147-107Z" fill="#f1ded3" opacity=".92"/>
+  <path d="M307 235c49-4 95-18 134-36-35 65-80 102-128 107l-6-71Z" fill="#f1ded3" opacity=".84"/>
+  <path d="M142 201c69 37 205 54 310 6M174 253c81 46 159 56 226 12" fill="none" stroke="#f16a59" stroke-linecap="round" stroke-width="3" opacity=".56"/>
+  <path d="m93 176-21-19m404 36 23-22" fill="none" stroke="#ba302b" stroke-linecap="round" stroke-width="8"/>
+  <path d="M164 311c-9 16-13 30-10 42m239-54c11 12 16 24 16 38" fill="none" stroke="#8c2925" stroke-linecap="round" stroke-width="5" opacity=".7"/>
+  <circle cx="142" cy="218" r="3" fill="#fff1e7" opacity=".65"/>
+  <circle cx="425" cy="223" r="2" fill="#fff1e7" opacity=".6"/>
+</svg>
